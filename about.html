@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Al Saleem Traders</title>
+<style>
+/* ===========================
+   GLOBAL & THEME STYLES
+=========================== */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{
+  background:linear-gradient(-45deg,#0d0d24,#0a1a3c,#002147,#031633);
+  background-size:400% 400%;
+  animation:gradientBG 15s ease infinite;
+  color:#e8e8e8;
+  overflow-x:hidden;
+}
+@keyframes gradientBG{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+/* ===========================
+   HEADER & NAVBAR
+=========================== */
+header{width:100%;position:fixed;top:0;left:0;background:rgba(10,10,40,0.8);backdrop-filter:blur(12px);z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,0.5);}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;}
+.logo{font-size:26px;font-weight:bold;letter-spacing:1px;color:#00f7ff;text-shadow:0 0 10px #00f7ff;}
+nav ul{list-style:none;display:flex;}
+nav ul li{margin-left:30px;}
+nav ul li a{text-decoration:none;color:#e8e8e8;font-weight:500;transition:0.3s;padding:6px 10px;border-radius:6px;}
+nav ul li a:hover{background:rgba(0,247,255,0.1);color:#00f7ff;box-shadow:0 0 10px rgba(0,247,255,0.4);}
+.active{color:#00f7ff;}
+/* ===========================
+   ABOUT SECTION
+=========================== */
+.about{
+  margin-top:120px;
+  padding:60px 50px;
+  max-width:1200px;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:1.8;
+}
+.about h1{
+  text-align:center;
+  font-size:48px;
+  color:#00f7ff;
+  text-shadow:0 0 20px rgba(0,247,255,0.7);
+  margin-bottom:40px;
+  animation:fadeInDown 1.5s ease;
+}
+@keyframes fadeInDown{
+  0%{opacity:0;transform:translateY(-30px);}
+  100%{opacity:1;transform:translateY(0);}
+}
+.about p{
+  font-size:17px;
+  color:#d0d0d0;
+  margin-bottom:20px;
+  text-align:justify;
+  animation:fadeInUp 2s ease;
+}
+@keyframes fadeInUp{
+  0%{opacity:0;transform:translateY(30px);}
+  100%{opacity:1;transform:translateY(0);}
+}
+/* HIGHLIGHT BOXES */
+.highlight-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  margin-top:60px;
+}
+.card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:30px;
+  backdrop-filter:blur(10px);
+  text-align:center;
+  transition:all 0.4s ease;
+}
+.card:hover{transform:translateY(-10px);box-shadow:0 0 20px rgba(0,247,255,0.3);}
+.card h3{color:#00f7ff;margin-bottom:10px;}
+.card p{font-size:15px;color:#cfcfcf;}
+/* FOOTER */
+footer{
+  background:rgba(10,10,40,0.9);
+  padding:30px;
+  text-align:center;
+  color:#aaa;
+  font-size:15px;
+  margin-top:80px;
+}
+footer span{color:#00f7ff;}
+@media(max-width:768px){
+  .about h1{font-size:34px;}
+  .about p{font-size:15px;}
+  nav ul li{margin-left:15px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">Al Saleem Traders</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="about">
+  <h1>About Al Saleem Traders</h1>
+  <p>
+    Established in <strong>1999</strong>, <span style="color:#00f7ff;">Al Saleem Traders</span> has grown to become one of the most trusted and respected chemical trading companies in Pakistan.  
+    Based in the heart of <strong>Karachi</strong>, we specialize in supplying a wide range of industrial chemicals to manufacturers, workshops, and production plants across the nation.  
+    Our journey began with a single goal — to deliver the highest-quality products with transparency, reliability, and long-term value.
+  </p>
+  <p>
+    Over the years, we have built a robust network of suppliers and clients through consistency, innovation, and trust.  
+    We provide premium-grade <strong>solvents</strong>, <strong>foaming agents</strong>, <strong>mould release agents</strong>, <strong>resins</strong>, <strong>coloring pastes</strong>, and several specialty formulations used across multiple industrial sectors.  
+    Whether it’s plastic manufacturing, polyurethane production, paint formulation, or rubber processing, our materials support quality at every stage.
+  </p>
+  <p>
+    We believe that chemical trading is not merely about supply — it’s about partnership.  
+    Our technical experts continuously explore new solutions to help clients optimize performance, reduce waste, and maintain international standards of safety.  
+    Al Saleem Traders represents the fusion of <em>experience</em> and <em>modern innovation</em>, serving industries with materials that make processes smoother and products stronger.
+  </p>
+  <p>
+    Our facilities are strategically located near <strong>Shoe Market, Bagh-e-Halar Hospital, Karachi</strong>, ensuring fast delivery and efficient logistics management.  
+    Every product we deliver passes through careful inspection and meets industry benchmarks for consistency.  
+    As a family-run business, we value honesty, responsibility, and commitment — the same principles that have guided us for over two decades.
+  </p>
+  <p>
+    Today, Al Saleem Traders stands proud as a symbol of quality and trust in Pakistan’s chemical sector.  
+    With a diverse portfolio ranging from base solvents like <strong>Butyl Acetate</strong>, <strong>Ethyl Acetate</strong>, <strong>Methylene Chloride</strong> to specialty additives such as <strong>Azodicarbonamide</strong>, <strong>Di-Octyl Phthalate</strong>, and advanced <strong>Mould Release Agents</strong>, we continue to lead the market in versatility and customer satisfaction.
+  </p>
+  <p>
+    Looking ahead, our vision is to expand into eco-friendly and next-generation chemical technologies while maintaining the same excellence that has defined us since 1999.  
+    We thank our loyal customers and partners for their continued trust — together, we will build a future of innovation, sustainability, and chemical mastery.
+  </p>
+
+  <div class="highlight-grid">
+    <div class="card">
+      <h3>Experience</h3>
+      <p>Over 25 years of chemical industry expertise, ensuring top-notch products and services.</p>
+    </div>
+    <div class="card">
+      <h3>Quality Assurance</h3>
+      <p>Each batch is tested and verified to meet industry and environmental standards.</p>
+    </div>
+    <div class="card">
+      <h3>Client Focus</h3>
+      <p>Personalized solutions tailored for industrial, commercial, and R&D applications.</p>
+    </div>
+    <div class="card">
+      <h3>Innovation</h3>
+      <p>We continually evolve by adopting new formulations and sustainable practices.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 <span>Al Saleem Traders</span> | Karachi, Pakistan</p>
+  <p>Email: alsaleemchemicals@gmail.com | Phone: 0321-2662973</p>
+</footer>
+
+</body>
+</html>

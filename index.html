@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Saleem Traders | Home</title>
+<style>
+/* =======================
+   GLOBAL HIGH-TECH DESIGN
+======================= */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{
+  background:radial-gradient(circle at top left,#021027,#000816 60%);
+  background-size:400% 400%;
+  animation:gradientBG 15s ease infinite;
+  color:#e8e8e8;
+  overflow-x:hidden;
+  position:relative;
+}
+
+/* BACKGROUND PARTICLES */
+.particles{
+  position:fixed;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  top:0;left:0;
+  z-index:-1;
+}
+.particle{
+  position:absolute;
+  width:4px;height:4px;
+  background:#00f7ff;
+  border-radius:50%;
+  opacity:0.6;
+  animation:float 10s linear infinite;
+}
+@keyframes float{
+  0%{transform:translateY(100vh) translateX(0);opacity:0;}
+  50%{opacity:1;}
+  100%{transform:translateY(-10vh) translateX(20px);opacity:0;}
+}
+@keyframes gradientBG{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* =======================
+   NAVBAR
+======================= */
+header{
+  width:100%;
+  position:fixed;
+  top:0;left:0;
+  background:rgba(10,10,40,0.85);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+  box-shadow:0 2px 15px rgba(0,247,255,0.15);
+}
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+}
+.logo{
+  font-size:28px;
+  font-weight:bold;
+  letter-spacing:1px;
+  color:#00f7ff;
+  text-shadow:0 0 10px #00f7ff,0 0 20px rgba(0,247,255,0.5);
+}
+nav ul{list-style:none;display:flex;}
+nav ul li{margin-left:30px;}
+nav ul li a{
+  text-decoration:none;
+  color:#e8e8e8;
+  font-weight:500;
+  transition:0.3s;
+  padding:6px 10px;
+  border-radius:6px;
+  position:relative;
+}
+nav ul li a:hover,nav ul li a.active{
+  color:#00f7ff;
+  text-shadow:0 0 10px rgba(0,247,255,0.6);
+}
+nav ul li a::after{
+  content:'';
+  position:absolute;
+  left:0;bottom:-3px;
+  width:0%;height:2px;
+  background:#00f7ff;
+  transition:0.4s;
+}
+nav ul li a:hover::after,nav ul li a.active::after{
+  width:100%;
+}
+
+/* =======================
+   HERO SECTION
+======================= */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+  position:relative;
+  overflow:hidden;
+}
+.hero h1{
+  font-size:64px;
+  color:#00f7ff;
+  text-shadow:0 0 25px rgba(0,247,255,0.7);
+  animation:fadeInDown 2s ease;
+}
+.hero p{
+  font-size:20px;
+  margin-top:20px;
+  max-width:800px;
+  color:#bfcfdc;
+  animation:fadeInUp 2s ease;
+}
+.hero::after{
+  content:'';
+  position:absolute;
+  bottom:0;left:0;
+  width:100%;height:2px;
+  background:linear-gradient(90deg,transparent,#00f7ff,transparent);
+  animation:glowLine 4s linear infinite;
+}
+@keyframes glowLine{
+  0%{transform:translateX(-100%);}
+  100%{transform:translateX(100%);}
+}
+@keyframes fadeInDown{
+  0%{opacity:0;transform:translateY(-40px);}
+  100%{opacity:1;transform:translateY(0);}
+}
+@keyframes fadeInUp{
+  0%{opacity:0;transform:translateY(40px);}
+  100%{opacity:1;transform:translateY(0);}
+}
+
+/* =======================
+   SECTIONS PREVIEW
+======================= */
+.section-preview{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:40px;
+  padding:100px 50px;
+}
+.preview-card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:40px 30px;
+  backdrop-filter:blur(10px);
+  transition:all 0.5s ease;
+  text-align:center;
+  box-shadow:0 0 15px rgba(0,247,255,0.05);
+}
+.preview-card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 0 30px rgba(0,247,255,0.3);
+  border-color:rgba(0,247,255,0.4);
+}
+.preview-card h2{
+  color:#00f7ff;
+  margin-bottom:15px;
+  text-shadow:0 0 10px rgba(0,247,255,0.5);
+}
+.preview-card p{
+  color:#d0d0d0;
+  font-size:15px;
+  line-height:1.7;
+}
+.preview-card a{
+  display:inline-block;
+  margin-top:25px;
+  color:#00f7ff;
+  text-decoration:none;
+  border:1px solid #00f7ff;
+  padding:10px 25px;
+  border-radius:8px;
+  transition:0.3s;
+}
+.preview-card a:hover{
+  background:#00f7ff;
+  color:#0d0d24;
+  box-shadow:0 0 20px #00f7ff;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer{
+  background:rgba(10,10,40,0.95);
+  padding:30px;
+  text-align:center;
+  color:#aaa;
+  font-size:15px;
+  border-top:1px solid rgba(255,255,255,0.1);
+}
+footer span{color:#00f7ff;}
+footer p:last-child{margin-top:6px;}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media(max-width:768px){
+  .hero h1{font-size:38px;}
+  .hero p{font-size:16px;}
+  .navbar{padding:10px 20px;}
+  nav ul li{margin-left:15px;}
+  .section-preview{padding:80px 20px;}
+}
+</style>
+</head>
+<body>
+
+<!-- Background Particles -->
+<div class="particles" id="particles"></div>
+
+<header>
+  <div class="navbar">
+    <div class="logo">Al Saleem Traders</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <h1>Welcome to Al Saleem Traders</h1>
+  <p>One of Karachi’s leading chemical trading companies, established in 1999 — delivering high-quality solvents, foaming agents, mold release agents, pigments, and resins to industries nationwide.</p>
+</section>
+
+<!-- SECTION PREVIEWS -->
+<section class="section-preview">
+  <div class="preview-card">
+    <h2>About Us</h2>
+    <p>With decades of trust, Al Saleem Traders continues to provide reliable chemical solutions with unmatched service quality and industry expertise.</p>
+    <a href="about.html">Read More</a>
+  </div>
+  <div class="preview-card">
+    <h2>Our Products</h2>
+    <p>Explore a full portfolio of solvents, release agents, pigments, resins, and foaming chemicals — sourced from trusted global manufacturers.</p>
+    <a href="products.html">View Products</a>
+  </div>
+  <div class="preview-card">
+    <h2>Contact Us</h2>
+    <p>Get in touch for inquiries, custom formulations, and business collaborations. We’re here to serve your industrial needs.</p>
+    <a href="contact.html">Reach Us</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 <span>Al Saleem Traders</span> | Karachi, Pakistan</p>
+  <p>Email: alsaleemchemicals@gmail.com | Phone: 0321-2662973</p>
+</footer>
+
+<!-- PARTICLE SCRIPT -->
+<script>
+const particleContainer = document.getElementById('particles');
+for(let i=0;i<60;i++){
+  const p=document.createElement('span');
+  p.classList.add('particle');
+  p.style.left=Math.random()*100+'%';
+  p.style.animationDelay=Math.random()*10+'s';
+  p.style.animationDuration=5+Math.random()*10+'s';
+  particleContainer.appendChild(p);
+}
+</script>
+
+</body>
+</html>

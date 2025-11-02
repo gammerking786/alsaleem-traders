@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Al Saleem Traders</title>
+<style>
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{
+  background:linear-gradient(-45deg,#0d0d24,#0a1a3c,#002147,#031633);
+  background-size:400% 400%;
+  animation:gradientBG 15s ease infinite;
+  color:#e8e8e8;
+  overflow-x:hidden;
+}
+@keyframes gradientBG{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+/* ===========================
+   HEADER / NAVBAR
+=========================== */
+header{width:100%;position:fixed;top:0;left:0;background:rgba(10,10,40,0.8);backdrop-filter:blur(12px);z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,0.5);}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;}
+.logo{font-size:26px;font-weight:bold;letter-spacing:1px;color:#00f7ff;text-shadow:0 0 10px #00f7ff;}
+nav ul{list-style:none;display:flex;}
+nav ul li{margin-left:30px;}
+nav ul li a{text-decoration:none;color:#e8e8e8;font-weight:500;transition:0.3s;padding:6px 10px;border-radius:6px;}
+nav ul li a:hover{background:rgba(0,247,255,0.1);color:#00f7ff;box-shadow:0 0 10px rgba(0,247,255,0.4);}
+.active{color:#00f7ff;}
+/* ===========================
+   PRODUCTS SECTION
+=========================== */
+.products{
+  margin-top:130px;
+  padding:70px 50px;
+  max-width:1300px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.products h1{
+  text-align:center;
+  font-size:48px;
+  color:#00f7ff;
+  text-shadow:0 0 20px rgba(0,247,255,0.6);
+  margin-bottom:40px;
+  animation:fadeInDown 1.5s ease;
+}
+@keyframes fadeInDown{
+  0%{opacity:0;transform:translateY(-30px);}
+  100%{opacity:1;transform:translateY(0);}
+}
+/* PRODUCT GRID */
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+  animation:fadeInUp 2s ease;
+}
+@keyframes fadeInUp{
+  0%{opacity:0;transform:translateY(30px);}
+  100%{opacity:1;transform:translateY(0);}
+}
+.card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:30px;
+  backdrop-filter:blur(10px);
+  transition:all 0.4s ease;
+  box-shadow:0 0 15px rgba(0,247,255,0.05);
+}
+.card:hover{transform:translateY(-10px);box-shadow:0 0 25px rgba(0,247,255,0.3);}
+.card h3{
+  color:#00f7ff;
+  margin-bottom:12px;
+  font-size:20px;
+}
+.card p{
+  color:#ccc;
+  font-size:15px;
+  margin-bottom:8px;
+  line-height:1.5;
+}
+/* FOOTER */
+footer{
+  background:rgba(10,10,40,0.9);
+  padding:30px;
+  text-align:center;
+  color:#aaa;
+  font-size:15px;
+  margin-top:80px;
+}
+footer span{color:#00f7ff;}
+@media(max-width:768px){
+  .products h1{font-size:36px;}
+  .navbar{padding:10px 20px;}
+  nav ul li{margin-left:15px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">Al Saleem Traders</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="products">
+  <h1>Our Products</h1>
+
+  <div class="product-grid">
+    <div class="card">
+      <h3>Azodicarbonamide (Expansor)</h3>
+      <p>A high-quality white foaming agent used in PVC, rubber, and plastic manufacturing for controlled expansion and uniform cell structure.</p>
+      <p><strong>Grade:</strong> Industrial / Food-safe available</p>
+    </div>
+
+    <div class="card">
+      <h3>Di-Octyl Phthalate (DOP)</h3>
+      <p>Primary plasticizer for flexible PVC products offering superior plasticity and low volatility.</p>
+      <p><strong>Applications:</strong> PVC cables, footwear, flooring, synthetic leather.</p>
+    </div>
+
+    <div class="card">
+      <h3>Butyl Acetate</h3>
+      <p>A fast-evaporating solvent used in paints, coatings, adhesives, and chemical synthesis with excellent solvency power.</p>
+    </div>
+
+    <div class="card">
+      <h3>Ethyl Acetate</h3>
+      <p>High-purity solvent used in coatings, adhesives, and cleaning formulations with sweet odour and fast drying time.</p>
+    </div>
+
+    <div class="card">
+      <h3>Methylene Chloride</h3>
+      <p>Strong solvent for PU foams, adhesives, and paint removers. High performance for industrial degreasing and stripping operations.</p>
+    </div>
+
+    <div class="card">
+      <h3>Pigment Colours</h3>
+      <p>Vibrant pigment series for paints, plastics, and inks ensuring brightness, dispersion, and durability.</p>
+    </div>
+
+    <div class="card">
+      <h3>Solvent Colours</h3>
+      <p>High-concentration transparent dyes ideal for coating, PU, and plastic colouring applications.</p>
+    </div>
+
+    <div class="card">
+      <h3>Colouring Paste</h3>
+      <p>Thick concentrated paste with excellent blending capability for plastic and resin formulations.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mould Release Agent (Kemi)</h3>
+      <p>Premium silicone-based release agent ensuring smooth demoulding for PU and rubber parts. Durable and non-stick finish.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mould Release Agent (Turkey)</h3>
+      <p>High-performance paste type release agent imported from Turkey, designed for PU moulds and foam industries.</p>
+    </div>
+
+    <div class="card">
+      <h3>Resin – PVC Resin</h3>
+      <p>High molecular weight PVC resin offering strength, clarity, and process stability for a range of industrial products.</p>
+    </div>
+
+    <div class="card">
+      <h3>Resin – PU Resin</h3>
+      <p>Polyurethane resin with excellent adhesion, flexibility, and resistance for coatings and casting applications.</p>
+    </div>
+
+    <div class="card">
+      <h3>Resin – Vinyl Resin</h3>
+      <p>Used for inks, coatings, and adhesives offering chemical resistance and superior binding characteristics.</p>
+    </div>
+
+    <div class="card">
+      <h3>Expansor (High Quality White)</h3>
+      <p>Refined grade Azodicarbonamide known for high gas yield and consistency in foam expansion; widely trusted in footwear and EVA applications.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 <span>Al Saleem Traders</span> | Karachi, Pakistan</p>
+  <p>Email: alsaleemchemicals@gmail.com | Phone: 0321-2662973</p>
+</footer>
+
+</body>
+</html>
